@@ -62,3 +62,6 @@ class Shipping:
         
         if self.order.status == "paid":
             self.order.update_status("shipped")
+
+
+##### Babedniosnbeogubseojgf
