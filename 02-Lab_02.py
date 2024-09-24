@@ -6,7 +6,7 @@ two classes, and students will need to explain
 the functionality of each method and add comments.
 
 Task:
-Document the code using both comments and docstrings 
+Document the code using both comments and docstrings
 for each class and method.
 Ensure that comments explain the purpose of major 
 code sections.
@@ -21,6 +21,7 @@ class Book:
     A class representing a book in a library.
 
     Attributes
+    ----------
     title : str
         The title of the book.
     author : str
@@ -31,17 +32,19 @@ class Book:
         A flag indicating whether the book is available.
 
     Methods
+    -------
     mark_as_borrowed()
         Marks the book as not available.
     mark_as_returned()
         Marks the book as available.
-    """ 
+    """
 
     def __init__(self, title:str, author:str, isbn:str):
         """
         Initializes a new book with the given title, author, and ISBN.
 
         Parameters
+        ----------
         title: str
             The title of the book.
         author: str
@@ -50,6 +53,7 @@ class Book:
             The ISBN of the book.
 
         Variables
+        ----------
         available: bool -> True
             A flag indicating whether the book is available
         """
@@ -76,10 +80,12 @@ class Library:
     A class representing a library that manages books.
 
     Attributes
+    ----------
     books : list[Book]
         A list of books in the library.
 
     Methods
+    -------
     add_book(book: Book)
         Adds a book to the library.
     borrow_book(isbn: str) -> bool
@@ -99,6 +105,7 @@ class Library:
         Adds a book to the library.
 
         Parameters
+        ----------
         book: Book
             The book to add to the library.
         """
@@ -109,10 +116,12 @@ class Library:
         Lets a user borrow a book from the library.
 
         Parameters
+        ----------
         isbn: str
             The ISBN of the book to borrow.
 
         Returns
+        -------
         bool
             True if the book was successfully borrowed, False otherwise
         """
@@ -127,10 +136,12 @@ class Library:
         Lets a user return a borrowed book to the library.
 
         Parameters
+        ----------
         isbn: str
             The ISBN of the book to return.
 
         Returns
+        -------
         bool
             True if the book was successfully returned, False otherwise
         """
